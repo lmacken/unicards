@@ -16,9 +16,14 @@ Convert strings into unicode playing cards
 .. code-block:: python
 
    >>> from unicards import unicard
-   >>> unicard('As')
-   '🂡'
-
+   >>> print(unicard('As'))
+   🂡
+   >>> print(unicards.unicard('Jd'))
+   🃋
+   >>> print(unicards.unicard('Tc'))
+   🃚
+   >>> print(unicards.unicard('2h'))
+   🂲
 
 ♠ Colorization
 ---------------

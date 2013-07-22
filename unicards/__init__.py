@@ -30,7 +30,7 @@ unicode_suits = 'ABCD'
 
 def unicard(card):
     if card.startswith('10'):
-        card = card.replace('10', 'T')
+        card = 'T' + card[2]
     face, suit = card.upper()
     c = eval("u'\\U0001f0{}{}'".format(
         unicode_suits[suits.index(suit)],

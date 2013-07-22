@@ -6,12 +6,19 @@
 .. image:: https://pypip.in/d/unicards/badge.png
    :target: https://crate.io/packages/unicards
 
-Convert strings into unicode playing cards
+A Python module for converting strings into unicode playing cards
 
 🂡 🂢 🂣 🂤 🂥 🂦 🂧 🂨 🂩 🂪 🂫 🂬 🂭 🂮 🂱 🂲 🂳 🂴 🂵 🂶 🂷 🂸 🂹 🂺 🂻 🂼 🂽 🂾 🃁 🃂 🃃 🃄 🃅 🃆 🃇 🃈 🃉 🃊 🃋 🃌 🃍 🃎 🃑 🃒 🃓 🃔 🃕 🃖 🃗 🃘 🃙 🃚 🃛 🃜 🃝 🃞
 
-♦ Python API
-------------
+♤ Installation
+--------------
+
+::
+
+   pip install unicards
+
+♦ API
+-----
 
 ::
 

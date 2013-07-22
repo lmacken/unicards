@@ -1,12 +1,12 @@
-unicards
-========
+♣ unicards
+==========
 
 Convert strings into unicode playing cards
 
 🂡 🂢 🂣 🂤 🂥 🂦 🂧 🂨 🂩 🂪 🂫 🂬 🂭 🂮 🂱 🂲 🂳 🂴 🂵 🂶 🂷 🂸 🂹 🂺 🂻 🂼 🂽 🂾 🃁 🃂 🃃 🃄 🃅 🃆 🃇 🃈 🃉 🃊 🃋 🃌 🃍 🃎 🃑 🃒 🃓 🃔 🃕 🃖 🃗 🃘 🃙 🃚 🃛 🃜 🃝 🃞
 
-Python API
-----------
+♥ Python API
+------------
 
 ```python
 >>> from unicards import unicard
@@ -15,8 +15,8 @@ Python API
 
 ```
 
-Colorization
-------------
+♠ Colorization
+---------------
 
 If the [colorama](https://code.google.com/p/colorama/) module is available,
 your cards will automatically be colorized. This feature can be disabled by

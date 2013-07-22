@@ -30,7 +30,7 @@ Convert strings into unicode playing cards
 
 If the `colorama <https://code.google.com/p/colorama/>`_ module is available,
 your cards will automatically be colorized. This feature can be disabled by
-setting `unicards.colors` to `False`.
+setting ``unicards.colors`` to ``False``.
 
 ♥ License
 ---------

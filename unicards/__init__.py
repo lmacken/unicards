@@ -25,10 +25,10 @@ def unicard(card, color=False):
     if card[:2] == '10':
         card = 'T' + card[2]
     face, suit = card.upper()
-    c = eval("u'\\U0001f0{}{}'".format(
+    c = unichr(int("0001f0{}{}".format(
         SUITS[1][SUITS[0].index(suit)],
         FACES[1][FACES[0].index(face)]
-    ))
+    ), base=16))
     if color:
         c = (suit in 'HD' and RED or BLACK) + c + RESET
     return c

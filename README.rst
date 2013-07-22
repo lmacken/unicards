@@ -10,7 +10,7 @@ A Python module for converting strings into unicode playing cards
 
 🂡 🂢 🂣 🂤 🂥 🂦 🂧 🂨 🂩 🂪 🂫 🂬 🂭 🂮 🂱 🂲 🂳 🂴 🂵 🂶 🂷 🂸 🂹 🂺 🂻 🂼 🂽 🂾 🃁 🃂 🃃 🃄 🃅 🃆 🃇 🃈 🃉 🃊 🃋 🃌 🃍 🃎 🃑 🃒 🃓 🃔 🃕 🃖 🃗 🃘 🃙 🃚 🃛 🃜 🃝 🃞
 
-♤ Installation
+♠ Installation
 --------------
 
 ::
@@ -31,13 +31,9 @@ A Python module for converting strings into unicode playing cards
    🃚
    >>> print(unicard('2h'))
    🂲
+   >>> unicard('8d', color=True)
+   u'\x1b[31m\U0001f0c8\x1b[39m'
 
-♠ Colorization
----------------
-
-If the `colorama <https://code.google.com/p/colorama/>`_ module is available,
-your cards will automatically be colorized. This feature can be disabled by
-setting ``unicards.colors`` to ``False``.
 
 ♥ License
 ---------

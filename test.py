@@ -2,28 +2,28 @@ import unicards
 
 
 def test_As():
-    unicards.colors = False
     card = unicards.unicard('As')
     assert card == u'\U0001f0a1', card
 
 
+def test_color():
+    card = unicards.unicard('As', color=True)
+    assert card == u'\x1b[30m\U0001f0a1\x1b[39m', repr(card)
+
 def test_unicards():
-    unicards.colors = True
     out = []
-    for suit in unicards.suits:
-        for face in unicards.faces:
+    for suit in unicards.SUITS[0]:
+        for face in unicards.FACES[0]:
             out.append(unicards.unicard(face + suit))
     print(u' '.join(out))
 
 
 def test_case_insensitivity():
-    unicards.colors = False
     assert unicards.unicard('as') == u'\U0001f0a1'
     assert unicards.unicard('aS') == u'\U0001f0a1'
 
 
 def test_ten():
-    unicards.colors = False
     assert unicards.unicard('10c') == u'\U0001f0da'
 
 

@@ -27,5 +27,5 @@ setup(
     tests_require=['nose'],
     include_package_data=True,
     zip_safe=True,
-    install_requires=['colorama'],
+    install_requires=[],
 )

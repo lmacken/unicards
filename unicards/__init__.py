@@ -16,26 +16,19 @@
 Converts strings into unicode playing cards
 """
 
-try:
-    from colorama import Fore
-    colors = True
-except ImportError:
-    colors = False
-
-faces = 'A23456789TJCQK'
-unicode_faces = '123456789ABCDE'
-suits = 'SHDC'
-unicode_suits = 'ABCD'
+FACES = 'A23456789TJCQK', '123456789ABCDE'
+SUITS = 'SHDC', 'ABCD'
+RED, BLACK, RESET = '\x1b[31m', '\x1b[30m', '\x1b[39m'
 
 
-def unicard(card):
+def unicard(card, color=False):
     if card.startswith('10'):
         card = 'T' + card[2]
     face, suit = card.upper()
     c = eval("u'\\U0001f0{}{}'".format(
-        unicode_suits[suits.index(suit)],
-        unicode_faces[faces.index(face)]
+        SUITS[1][SUITS[0].index(suit)],
+        FACES[1][FACES[0].index(face)]
     ))
-    if colors:
-        c = (suit in 'HD' and Fore.RED or Fore.BLACK) + c + Fore.RESET
+    if color:
+        c = (suit in 'HD' and RED or BLACK) + c + RESET
     return c

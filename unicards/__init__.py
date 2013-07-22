@@ -39,11 +39,3 @@ def unicard(card):
     if colors:
         c = (card[1] in 'hd' and Fore.RED or Fore.BLACK) + c + Fore.RESET
     return c
-
-
-if __name__ == '__main__':
-    out = []
-    for suit in suits:
-        for face in faces:
-            out.append(unicard(face + suit))
-    print(u' '.join(out))

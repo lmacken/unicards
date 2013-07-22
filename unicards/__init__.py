@@ -26,16 +26,18 @@ except ImportError:
 
 faces = 'A23456789TJCQK'
 unicode_faces = '123456789ABCDE'
-suits = 'shdc'
+suits = 'SHDC'
 unicode_suits = 'ABCD'
 
 
 def unicard(card):
     if card.startswith('10'):
         card = card.replace('10', 'T')
-    code = "u'\\U0001f0{}{}'".format(unicode_suits[suits.index(card[1].lower())],
-                                     unicode_faces[faces.index(card[0].upper())])
-    c = eval(code)
+    face, suit = card.upper()
+    c = eval("u'\\U0001f0{}{}'".format(
+        unicode_suits[suits.index(suit)],
+        unicode_faces[faces.index(face)]
+    ))
     if colors:
-        c = (card[1] in 'hd' and Fore.RED or Fore.BLACK) + c + Fore.RESET
+        c = (suit in 'HD' and Fore.RED or Fore.BLACK) + c + Fore.RESET
     return c

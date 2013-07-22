@@ -16,6 +16,11 @@
 Converts strings into unicode playing cards
 """
 
+import sys
+
+if sys.version_info.major == 3:
+    unichr = chr
+
 FACES = 'A23456789TJCQK', '123456789ABCDE'
 SUITS = 'SHDC', 'ABCD'
 RED, BLACK, RESET = '\x1b[31m', '\x1b[30m', '\x1b[39m'

@@ -1,9 +1,9 @@
 ♣ unicards
 ==========
 
-.. image:: https://api.travis-ci.org/lmacken/unicards.png?branch=develop
+.. image:: https://api.travis-ci.org/lmacken/unicards.png?branch=master
    :target: http://travis-ci.org/lmacken/unicards
-.. image:: https://coveralls.io/repos/lmacken/unicards/badge.png?branch=develop
+.. image:: https://coveralls.io/repos/lmacken/unicards/badge.png?branch=master
    :target: https://coveralls.io/r/lmacken/unicards
 .. image:: https://pypip.in/v/unicards/badge.png
    :target: https://crate.io/packages/unicards

@@ -22,7 +22,7 @@ RED, BLACK, RESET = '\x1b[31m', '\x1b[30m', '\x1b[39m'
 
 
 def unicard(card, color=False):
-    if card.startswith('10'):
+    if card[:2] == '10':
         card = 'T' + card[2]
     face, suit = card.upper()
     c = eval("u'\\U0001f0{}{}'".format(

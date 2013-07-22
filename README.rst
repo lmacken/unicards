@@ -13,7 +13,7 @@ Convert strings into unicode playing cards
 ♦ Python API
 ------------
 
-.. code-block:: python
+::
 
    >>> from unicards import unicard
    >>> print(unicard('As'))

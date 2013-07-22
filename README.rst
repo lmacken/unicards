@@ -1,10 +1,10 @@
 ♣ unicards
 ==========
 
-.. image:: https://pypip.in/v/quantumrandom/badge.png
-   :target: https://crate.io/packages/quantumrandom
-.. image:: https://pypip.in/d/quantumrandom/badge.png
-   :target: https://crate.io/packages/quantumrandom
+.. image:: https://pypip.in/v/unicards/badge.png
+   :target: https://crate.io/packages/unicards
+.. image:: https://pypip.in/d/unicards/badge.png
+   :target: https://crate.io/packages/unicards
 
 Convert strings into unicode playing cards
 

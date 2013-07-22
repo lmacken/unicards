@@ -8,6 +8,7 @@ def test_As():
 
 
 def test_unicards():
+    unicards.colors = True
     out = []
     for suit in unicards.suits:
         for face in unicards.faces:

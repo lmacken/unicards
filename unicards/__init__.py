@@ -33,8 +33,8 @@ unicode_suits = 'ABCD'
 def unicard(card):
     if card.startswith('10'):
         card = card.replace('10', 'T')
-    code = "u'\\U0001f0{}{}'".format(unicode_suits[suits.index(card[1])],
-                                     unicode_faces[faces.index(card[0])])
+    code = "u'\\U0001f0{}{}'".format(unicode_suits[suits.index(card[1].lower())],
+                                     unicode_faces[faces.index(card[0].upper())])
     c = eval(code)
     if colors:
         c = (card[1] in 'hd' and Fore.RED or Fore.BLACK) + c + Fore.RESET

@@ -13,3 +13,9 @@ def test_unicards():
         for face in unicards.faces:
             out.append(unicards.unicard(face + suit))
     print(u' '.join(out))
+
+
+def test_case_insensitivity():
+    unicards.colors = False
+    assert unicards.unicard('as') == u'\U0001f0a1'
+    assert unicards.unicard('aS') == u'\U0001f0a1'

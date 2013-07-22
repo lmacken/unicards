@@ -25,3 +25,7 @@ def test_case_insensitivity():
 def test_ten():
     unicards.colors = False
     assert unicards.unicard('10c') == u'\U0001f0da'
+
+
+if __name__ == '__main__':
+    test_unicards()

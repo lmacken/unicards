@@ -20,3 +20,8 @@ def test_case_insensitivity():
     unicards.colors = False
     assert unicards.unicard('as') == u'\U0001f0a1'
     assert unicards.unicard('aS') == u'\U0001f0a1'
+
+
+def test_ten():
+    unicards.colors = False
+    assert unicards.unicard('10c') == u'\U0001f0da'

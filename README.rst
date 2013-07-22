@@ -25,11 +25,11 @@ A Python module for converting strings into unicode playing cards
    >>> from unicards import unicard
    >>> print(unicard('As'))
    🂡
-   >>> print(unicards.unicard('Jd'))
+   >>> print(unicard('Jd'))
    🃋
-   >>> print(unicards.unicard('Tc'))
+   >>> print(unicard('Tc'))
    🃚
-   >>> print(unicards.unicard('2h'))
+   >>> print(unicard('2h'))
    🂲
 
 ♠ Colorization

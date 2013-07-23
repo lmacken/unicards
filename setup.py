@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='unicards',
-    version='0.3',
+    version='0.4',
     description="Convert strings into unicode playing cards",
     author='Luke Macken',
     author_email='lmacken@redhat.com',

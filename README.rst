@@ -12,7 +12,7 @@
 
 A Python module for converting strings into `unicode playing cards <https://en.wikipedia.org/wiki/Unicode_Playing_Card_Block>`_.
 
-🂡 🂢 🂣 🂤 🂥 🂦 🂧 🂨 🂩 🂪 🂫 🂬 🂭 🂮 🂱 🂲 🂳 🂴 🂵 🂶 🂷 🂸 🂹 🂺 🂻 🂼 🂽 🂾 🃁 🃂 🃃 🃄 🃅 🃆 🃇 🃈 🃉 🃊 🃋 🃌 🃍 🃎 🃑 🃒 🃓 🃔 🃕 🃖 🃗 🃘 🃙 🃚 🃛 🃜 🃝 🃞
+.. image:: http://lewk.org/img/unicards.png
 
 ♠ Installation
 --------------

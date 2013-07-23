@@ -21,9 +21,12 @@ import sys
 if sys.version_info.major == 3:
     unichr = chr
 
+# Input values and their corresponding unicode hex values
 FACES = 'A23456789TJCQK', '123456789ABCDE'
 SUITS = 'SHDC', 'ABCD'
-RED, BLACK, RESET = '\x1b[31m', '\x1b[30m', '\x1b[39m'
+
+# ANSI color escape codes
+COLORS = ['\x1b[%dm' % c for c in (30, 31, 34, 32, 39)]
 
 
 def unicard(card, color=False):
@@ -35,5 +38,5 @@ def unicard(card, color=False):
         FACES[1][FACES[0].index(face)]
     ), base=16))
     if color:
-        c = (suit in 'HD' and RED or BLACK) + c + RESET
+        c = COLORS[SUITS[0].index(suit)] + c + COLORS[-1]
     return c

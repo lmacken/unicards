@@ -10,12 +10,15 @@ def test_color():
     card = unicards.unicard('As', color=True)
     assert card == u'\x1b[30m\U0001f0a1\x1b[39m', repr(card)
 
+
 def test_unicards():
-    out = []
     for suit in unicards.SUITS[0]:
+        print('')
+        out = []
         for face in unicards.FACES[0]:
             out.append(unicards.unicard(face + suit, color=True))
-    print(u' '.join(out))
+        print(u' '.join(out))
+    print('')
 
 
 def test_case_insensitivity():

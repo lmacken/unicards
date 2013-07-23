@@ -20,11 +20,10 @@ import sys
 if sys.version_info.major == 3:
     unichr = chr
 
-# Input values and their corresponding unicode hex values
-FACES = 'A23456789TJCQK', '123456789ABCDE'
-SUITS = 'SHDC', 'ABCD'
-
-# ANSI color escape codes
+FACES = 'A23456789TJCQK'
+UNICODE_FACES = '123456789ABCDE'
+SUITS = 'SHDC'
+UNICODE_SUITS = 'ABCD'
 COLORS = ['\x1b[%dm' % c for c in (30, 31, 34, 32, 39)]
 
 
@@ -32,10 +31,10 @@ def unicard(card, color=False):
     if card[:2] == '10':
         card = 'T' + card[2]
     face, suit = card.upper()
-    c = unichr(int("0001f0{}{}".format(
-        SUITS[1][SUITS[0].index(suit)],
-        FACES[1][FACES[0].index(face)]
+    c = unichr(int('0001f0%s%s' % (
+        UNICODE_SUITS[SUITS.index(suit)],
+        UNICODE_FACES[FACES.index(face)]
     ), base=16))
     if color:
-        c = COLORS[SUITS[0].index(suit)] + c + COLORS[-1]
+        c = COLORS[SUITS.index(suit)] + c + COLORS[-1]
     return c

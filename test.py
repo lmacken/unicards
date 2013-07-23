@@ -26,10 +26,10 @@ def test_color():
 
 
 def test_unicards():
-    for suit in unicards.SUITS[0]:
+    for suit in unicards.SUITS:
         print('')
         out = []
-        for face in unicards.FACES[0]:
+        for face in unicards.FACES:
             out.append(unicards.unicard(face + suit, color=True))
         print(u' '.join(out))
     print('')

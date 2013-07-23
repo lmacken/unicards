@@ -42,5 +42,4 @@ A Python module for converting strings into `unicode playing cards <https://en.w
 ♥ License
 ---------
 
-.. image:: https://www.gnu.org/graphics/gplv3-127x51.png
-   :target: https://www.gnu.org/licenses/gpl.txt
+`Apache License, Version 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_

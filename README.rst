@@ -10,7 +10,7 @@
 .. image:: https://pypip.in/d/unicards/badge.png
    :target: https://crate.io/packages/unicards
 
-A Python module for converting strings into unicode playing cards
+A Python module for converting strings into `unicode playing cards <https://en.wikipedia.org/wiki/Unicode_Playing_Card_Block>`_.
 
 🂡 🂢 🂣 🂤 🂥 🂦 🂧 🂨 🂩 🂪 🂫 🂬 🂭 🂮 🂱 🂲 🂳 🂴 🂵 🂶 🂷 🂸 🂹 🂺 🂻 🂼 🂽 🂾 🃁 🃂 🃃 🃄 🃅 🃆 🃇 🃈 🃉 🃊 🃋 🃌 🃍 🃎 🃑 🃒 🃓 🃔 🃕 🃖 🃗 🃘 🃙 🃚 🃛 🃜 🃝 🃞
 

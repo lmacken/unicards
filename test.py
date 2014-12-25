@@ -44,5 +44,9 @@ def test_ten():
     assert unicards.unicard('10c') == u'\U0001f0da'
 
 
+def test_back():
+    assert unicards.unicard('b') == u'\U0001f0a0'
+
+
 if __name__ == '__main__':
     test_unicards()

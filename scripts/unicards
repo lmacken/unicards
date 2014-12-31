@@ -1,0 +1,33 @@
+#!/usr/bin/env python
+
+import sys
+from unicards import unicard
+
+def usage():
+    print("usage:")
+    print("  unicards [ARGS] CARD")
+    print("args:")
+    print("  -c/--color     print terminal colors")
+    print("")
+    print("see `pydoc unicards' for more information")
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    if "-h" in args or "--help" in args:
+        usage()
+        sys.exit()
+
+    color = False
+    for opt in ["-c", "--color"]:
+        try:
+            args.remove(opt)
+            color = True
+        except ValueError:
+            pass
+
+    try:
+        print(unicard(args[0], color=color))
+    except (IndexError, ValueError):
+        usage()
+        sys.exit()

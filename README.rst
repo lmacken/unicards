@@ -37,6 +37,8 @@ A Python module for converting strings into `unicode playing cards <https://en.w
    🂲
    >>> unicard('8d', color=True)
    u'\x1b[31m\U0001f0c8\x1b[39m'
+   >>> unicard('b')
+   🂠
 
 
 ♥ License

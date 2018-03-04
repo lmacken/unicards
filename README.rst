@@ -5,9 +5,9 @@
    :target: http://travis-ci.org/lmacken/unicards
 .. image:: https://coveralls.io/repos/lmacken/unicards/badge.png?branch=master
    :target: https://coveralls.io/r/lmacken/unicards
-.. image:: https://pypip.in/v/unicards/badge.png
+.. image:: https://img.shields.io/pypi/v/unicards.svg
    :target: https://crate.io/packages/unicards
-.. image:: https://pypip.in/d/unicards/badge.png
+.. image:: https://img.shields.io/pypi/dm/unicards.svg
    :target: https://crate.io/packages/unicards
 
 A Python module for converting strings into `unicode playing cards <https://en.wikipedia.org/wiki/Unicode_Playing_Card_Block>`_.
